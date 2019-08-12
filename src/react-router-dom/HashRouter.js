@@ -25,10 +25,6 @@ export default class HashRouter extends Component {
     })
   }
 
-  componentWillUnmount() {
-
-  }
-
   render() {
     let value = {
       location: this.state.location,
@@ -42,7 +38,7 @@ export default class HashRouter extends Component {
 
     return (
       <Provider value={value}>
-        {this.props.children}
+        { this.props.children }
       </Provider>
     )
   }
